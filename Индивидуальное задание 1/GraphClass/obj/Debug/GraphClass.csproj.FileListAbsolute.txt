@@ -1,0 +1,29 @@
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\GraphClass\obj\Debug\GraphClass.Graph.resources
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\GraphClass\obj\Debug\GraphClass.Properties.Resources.resources
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\GraphClass\obj\Debug\GraphClass.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\GraphClass\bin\Debug\GraphClass.dll.config
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\GraphClass\bin\Debug\GraphClass.dll
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\GraphClass\bin\Debug\GraphClass.pdb
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\GraphClass\obj\Debug\GraphClass.dll
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\GraphClass\obj\Debug\GraphClass.pdb
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\GraphClass\obj\Debug\GraphClass.csprojAssemblyReference.cache
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\GraphClass\bin\Debug\GraphClass.dll.config
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\GraphClass\bin\Debug\GraphClass.dll
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\GraphClass\bin\Debug\GraphClass.pdb
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\GraphClass\obj\Debug\GraphClass.csprojAssemblyReference.cache
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\GraphClass\obj\Debug\GraphClass.Graph.resources
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\GraphClass\obj\Debug\GraphClass.Properties.Resources.resources
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\GraphClass\obj\Debug\GraphClass.csproj.GenerateResource.cache
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\GraphClass\obj\Debug\GraphClass.csproj.CoreCompileInputs.cache
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\GraphClass\obj\Debug\GraphClass.dll
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\GraphClass\obj\Debug\GraphClass.pdb
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\GraphClass\bin\Debug\GraphClass.dll.config
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\GraphClass\bin\Debug\GraphClass.dll
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\GraphClass\bin\Debug\GraphClass.pdb
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\GraphClass\obj\Debug\GraphClass.csprojAssemblyReference.cache
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\GraphClass\obj\Debug\GraphClass.Graph.resources
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\GraphClass\obj\Debug\GraphClass.Properties.Resources.resources
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\GraphClass\obj\Debug\GraphClass.csproj.GenerateResource.cache
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\GraphClass\obj\Debug\GraphClass.csproj.CoreCompileInputs.cache
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\GraphClass\obj\Debug\GraphClass.dll
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\GraphClass\obj\Debug\GraphClass.pdb

@@ -1,0 +1,41 @@
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.AlgorithmsOnGraphs.resources
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.Properties.Resources.resources
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\AlgorithmsOnGraphsClass\bin\Debug\AlgorithmsOnGraphsClass.dll.config
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\AlgorithmsOnGraphsClass\bin\Debug\AlgorithmsOnGraphsClass.dll
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\AlgorithmsOnGraphsClass\bin\Debug\AlgorithmsOnGraphsClass.pdb
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\AlgorithmsOnGraphsClass\bin\Debug\GraphClass.dll
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\AlgorithmsOnGraphsClass\bin\Debug\GraphClass.pdb
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\AlgorithmsOnGraphsClass\bin\Debug\GraphClass.dll.config
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.csproj.CopyComplete
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.dll
+C:\Users\ASUS\Desktop\Мое\2 курс\Конструироание алгоритмов\Индивидуальная работа 1\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.pdb
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\AlgorithmsOnGraphsClass\bin\Debug\AlgorithmsOnGraphsClass.dll.config
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\AlgorithmsOnGraphsClass\bin\Debug\AlgorithmsOnGraphsClass.dll
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\AlgorithmsOnGraphsClass\bin\Debug\AlgorithmsOnGraphsClass.pdb
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\AlgorithmsOnGraphsClass\bin\Debug\GraphClass.dll
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\AlgorithmsOnGraphsClass\bin\Debug\GraphClass.pdb
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\AlgorithmsOnGraphsClass\bin\Debug\GraphClass.dll.config
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.csprojAssemblyReference.cache
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.AlgorithmsOnGraphs.resources
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.Properties.Resources.resources
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.csproj.GenerateResource.cache
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.csproj.CoreCompileInputs.cache
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.csproj.CopyComplete
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.dll
+C:\Users\Владислав\Desktop\программы вс17\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.pdb
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\AlgorithmsOnGraphsClass\bin\Debug\AlgorithmsOnGraphsClass.dll.config
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\AlgorithmsOnGraphsClass\bin\Debug\AlgorithmsOnGraphsClass.dll
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\AlgorithmsOnGraphsClass\bin\Debug\AlgorithmsOnGraphsClass.pdb
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\AlgorithmsOnGraphsClass\bin\Debug\GraphClass.dll
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\AlgorithmsOnGraphsClass\bin\Debug\GraphClass.pdb
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\AlgorithmsOnGraphsClass\bin\Debug\GraphClass.dll.config
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.csprojAssemblyReference.cache
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.AlgorithmsOnGraphs.resources
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.Properties.Resources.resources
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.csproj.GenerateResource.cache
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.csproj.CoreCompileInputs.cache
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.csproj.CopyComplete
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.dll
+C:\Users\Владислав\Desktop\программы вс17\2 курс\Конструирование алгоритмов и структур данных\Индивидуальное задание 1\AlgorithmsOnGraphsClass\obj\Debug\AlgorithmsOnGraphsClass.pdb
