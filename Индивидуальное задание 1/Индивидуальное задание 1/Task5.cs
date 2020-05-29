@@ -51,10 +51,9 @@ namespace Индивидуальное_задание_1
                     answer.Text = "Остовное дерево:\n";
                     answer.Text += CreateString(g.OstTree());
                     answer.Text += "\nФундаментальное множество циклов:\n";
-                    answer.Text += CreateStr(g.FMC());
-                    File.WriteAnswer(answer);
+                    answer.Text += CreateStr(g.FMC());                   
                 }
-                
+                 File.WriteAnswer(answer);
             }
         }
 

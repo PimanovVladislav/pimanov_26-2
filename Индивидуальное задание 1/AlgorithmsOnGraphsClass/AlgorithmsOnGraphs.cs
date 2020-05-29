@@ -214,26 +214,45 @@ namespace AlgorithmsOnGraphsClass
             }
             return Tree;
         }
-        private string Cicl(int[,] G2, int i, int k, int j)
+        private string Cicl(int[,] G2, int Begin, int End)
         {
-            if (i != j)
+            int[] Pytb = new int[graph.CountOfVertex()];
+            string[] VerP = new string[graph.CountOfVertex()];
+            bool[] visited = new bool[graph.CountOfVertex()];
+            for (int ind = 0; ind < graph.CountOfVertex(); ind++)
             {
-                if (G2[k, j] == 1)
-                {
-                    if (i != k) return (j + 1).ToString() + Cicl(G2, i, i, k);
-                    else return (j + 1).ToString();
-                }
-                else
-                {
-                    int t = 0;
-                    while (G2[t, j] != 1)
-                    {
-                        t++;
-                    }
-                    return Cicl(G2, i, t, j);
-                }
+                visited[ind] = false;
+                Pytb[ind] = 10000;
+                VerP[ind] = (Begin+1).ToString();
             }
-            else return "";
+            visited[Begin] = true;
+            Pytb[Begin] = 0;
+            while (vizit(visited, graph.CountOfVertex()))
+            {
+                visited[Begin] = true;
+                for (int j = 0; j < graph.CountOfVertex(); j++)
+                {
+                    if (G2[Begin,j]==1 && visited[j] == false)
+                    {
+                        if (Pytb[Begin] + graph.WeightEdge(Begin, j) < Pytb[j])
+                        {
+                            Pytb[j] = Pytb[Begin] + graph.WeightEdge(Begin, j);
+                            VerP[j] = VerP[Begin] + (j+1).ToString();
+                        }
+                    }
+                }
+                for (int c = 0; c < graph.CountOfVertex(); c++)
+                    for (int i = 0; i < graph.CountOfVertex(); i++)
+                    {
+                        if (visited[i] == false && visited[c] == true && G2[c,i] == 1)
+                        {
+                            Begin = i;
+
+                            break;
+                        }
+                    }
+            }
+            return VerP[End];
         }
 
 
@@ -252,8 +271,10 @@ namespace AlgorithmsOnGraphsClass
                 {
                     if (graph.ExistEdge(i, j) == true && Tree[i, j] == 0)
                     {
-                        string cicl = (i + 1).ToString();
-                        cicl += Cicl(Tree, i, i, j);
+                        string cicl = "";
+                        cicl += Cicl(Tree, i,  j);
+                        Tree[i, j] = 1;
+                        Tree[j, i] = 1;
                         cicl += (i + 1).ToString() + "\n";
                         fmc.Add(cicl);
                     }
@@ -333,8 +354,12 @@ namespace AlgorithmsOnGraphsClass
                 }
             }
             for (int k = 0; k < s.Length - 1; k++)
-                S += s[k] + ", ";
-            S += s[s.Length - 1] + "}";
+            {
+                int vert = int.Parse(s[k].ToString());
+                vert++;
+                S += vert.ToString() + ", ";
+            }
+            S += (int.Parse(s[s.Length - 1].ToString()) + 1).ToString() + "}";
             return S;
         }
         public List<string> Paros()
@@ -348,21 +373,21 @@ namespace AlgorithmsOnGraphsClass
             while (vizit(visited, graph.CountOfVertex()))
             {
                 int i = MinDeg(visited);
-               
+
                 for (int j = 0; j < graph.CountOfVertex(); j++)
                 {
                     if (graph.ExistEdge(i, j) == true)
                     {
-                        if (visited[i] == false&&visited[j] == false)
+                        if (visited[i] == false && visited[j] == false)
                         {
                             visited[i] = true;
                             visited[j] = true;
-                            string s = "( " + i.ToString() + " ," + j.ToString() + ") ";
+                            string s = "( " + (i + 1).ToString() + " ," + (j + 1).ToString() + ") ";
                             ParoSochet.Add(s);
-                        }                        
-                    }                    
+                        }
+                    }
                 }
-                 visited[i] = true;
+                visited[i] = true;
             }
             return ParoSochet;
         }
@@ -383,8 +408,7 @@ namespace AlgorithmsOnGraphsClass
             return Index;
         }
 
-
-        public string Deickstra(int Begin=0, int End = -1)
+        public string Deickstra(int Begin = 0, int End = -1)
         {
             if (End == -1) End = graph.CountOfVertex() - 1;
             int[] Pytb = new int[graph.CountOfVertex()];
@@ -403,28 +427,27 @@ namespace AlgorithmsOnGraphsClass
                 visited[Begin] = true;
                 for (int j = 0; j < graph.CountOfVertex(); j++)
                 {
-                    if (graph.ExistEdge(Begin, j) == true&&visited[j]==false)
+                    if (graph.ExistEdge(Begin, j) == true && visited[j] == false)
                     {
                         if (Pytb[Begin] + graph.WeightEdge(Begin, j) < Pytb[j])
                         {
-                            Pytb[j] = Pytb[Begin]+graph.WeightEdge(Begin, j);
+                            Pytb[j] = Pytb[Begin] + graph.WeightEdge(Begin, j);
                             VerP[j] = VerP[Begin] + j.ToString();
                         }
                     }
                 }
-                for(int c=0;c< graph.CountOfVertex();c++)
-                for (int i = 0; i < graph.CountOfVertex(); i++)
-                {
-                    if (visited[i] == false &&visited[c]==true&& graph.ExistEdge(c, i)==true)
+                for (int c = 0; c < graph.CountOfVertex(); c++)
+                    for (int i = 0; i < graph.CountOfVertex(); i++)
                     {
-                        Begin = i;
-                        
-                        break;
+                        if (visited[i] == false && visited[c] == true && graph.ExistEdge(c, i) == true)
+                        {
+                            Begin = i;
+
+                            break;
+                        }
                     }
-                }
             }
             return VerP[End];
         }
-
     }
 }
