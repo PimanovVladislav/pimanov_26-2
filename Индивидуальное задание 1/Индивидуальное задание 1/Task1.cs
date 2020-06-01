@@ -36,7 +36,10 @@ namespace Индивидуальное_задание_1
             if (g.CountComponents() > 1) answer.Text = "Это некорректный граф";
             else
             {
+                if(First.Text !=""&& Last.Text!="")
                 answer.Text = CreateString(g.Deickstra(int.Parse(First.Text), int.Parse(Last.Text)));
+                else
+                    answer.Text = CreateString(g.Deickstra());
             }
             File.WriteAnswer(answer);
 

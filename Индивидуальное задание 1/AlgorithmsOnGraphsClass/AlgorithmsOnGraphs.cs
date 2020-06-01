@@ -420,32 +420,37 @@ namespace AlgorithmsOnGraphsClass
                 Pytb[ind] = 10000;
                 VerP[ind] = Begin.ToString();
             }
-            visited[Begin] = true;
             Pytb[Begin] = 0;
             while (vizit(visited, graph.CountOfVertex()))
             {
-                visited[Begin] = true;
-                for (int j = 0; j < graph.CountOfVertex(); j++)
+                if (visited[Begin] == true)
+                    break;
+                else
                 {
-                    if (graph.ExistEdge(Begin, j) == true && visited[j] == false)
-                    {
-                        if (Pytb[Begin] + graph.WeightEdge(Begin, j) < Pytb[j])
-                        {
-                            Pytb[j] = Pytb[Begin] + graph.WeightEdge(Begin, j);
-                            VerP[j] = VerP[Begin] + j.ToString();
-                        }
-                    }
-                }
-                for (int c = 0; c < graph.CountOfVertex(); c++)
-                    for (int i = 0; i < graph.CountOfVertex(); i++)
-                    {
-                        if (visited[i] == false && visited[c] == true && graph.ExistEdge(c, i) == true)
-                        {
-                            Begin = i;
 
-                            break;
+                    visited[Begin] = true;
+                    for (int j = 0; j < graph.CountOfVertex(); j++)
+                    {
+                        if (graph.ExistEdge(Begin, j) == true && visited[j] == false)
+                        {
+                            if (Pytb[Begin] + graph.WeightEdge(Begin, j) <= Pytb[j])
+                            {
+                                Pytb[j] = Pytb[Begin] + graph.WeightEdge(Begin, j);
+                                VerP[j] = VerP[Begin] + j.ToString();
+                            }
                         }
                     }
+                    for (int c = 0; c < graph.CountOfVertex(); c++)
+                        for (int i = 0; i < graph.CountOfVertex(); i++)
+                        {
+                            if (visited[i] == false && visited[c] == true && graph.ExistEdge(c, i) == true)
+                            {
+                                Begin = i;
+
+                                break;
+                            }
+                        }
+                }
             }
             return VerP[End];
         }
