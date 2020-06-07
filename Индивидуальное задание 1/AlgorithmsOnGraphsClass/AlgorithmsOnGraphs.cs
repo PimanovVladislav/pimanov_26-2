@@ -300,39 +300,30 @@ namespace AlgorithmsOnGraphsClass
                 for (int i = 0; i < graph.CountOfVertex(); i++)
                 {
                     string s = S;
-                    bool crit = false;
-                    for (int k = 0; k < s.Length; k++)
-                        if (s[k].ToString() == i.ToString()) crit = true;
-                    if (crit == false)
-                    {
-                        s += i.ToString();
-
-                        for (int k = 0; k < s.Length; k++)
+                    string vert = i.ToString();
+                    bool crit = true; ;
+                    for (int b = 0; b < s.Length; b++)
+                    { 
+                        if(s[b].ToString() == vert)
                         {
-                            int b = int.Parse(s[k] + "");
-                            for (int j = 0; j < graph.CountOfVertex(); j++)
+                            crit = false;
+                        }
+                    }
+                    if(crit)
+                    {
+                        s += vert;
+                        vertex.Push(s);
+                    }
+                    else 
+                    {
+                        for (int b = 0; b < s.Length; b++)
+                        {
+                            if (s[b].ToString() != vert)
                             {
-                                if (graph.ExistEdge(b, j))
-                                {
-                                    Localvisited[b] = true;
-                                    Localvisited[j] = true;
-
-                                }
+                                crit = true;
                             }
                         }
-                        if (vizit(Localvisited, graph.CountOfVertex()))
-                        {
-                            vertex.Push(s);
-                        }
-                        else
-                        {
-                            list.Add(s);
-                        }
-
-                    }
-                    for (int ind = 0; ind < graph.CountOfVertex(); ind++)
-                    {
-                        Localvisited[ind] = false;
+                        if (!crit) list.Add(s);
                     }
                 }
             }
@@ -347,7 +338,7 @@ namespace AlgorithmsOnGraphsClass
             int leng = graph.CountOfVertex();
             for (int i = 0; i < Pokr.LongCount(); i++)
             {
-                if (Pokr[i].Length < leng)
+                if (Pokr[i].Length > leng)
                 {
                     s = Pokr[i];
                     leng = Pokr[i].Length;
