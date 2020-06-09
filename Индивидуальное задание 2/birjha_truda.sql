@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Июн 09 2020 г., 14:52
+-- Время создания: Июн 09 2020 г., 15:36
 -- Версия сервера: 5.5.25
 -- Версия PHP: 5.3.13
 
@@ -34,8 +34,7 @@ CREATE TABLE IF NOT EXISTS `companies` (
   `Prof_Napr` varchar(200) NOT NULL,
   `Type` varchar(20) NOT NULL,
   `Info` text NOT NULL,
-  PRIMARY KEY (`id_Company`),
-  UNIQUE KEY `Company` (`Company`)
+  PRIMARY KEY (`id_Company`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
@@ -107,20 +106,12 @@ CREATE TABLE IF NOT EXISTS `vacansii` (
   `Doljnost` varchar(200) NOT NULL,
   `Oklad` int(10) NOT NULL,
   `Trebovaniya` text NOT NULL,
-  `Company` varchar(100) NOT NULL,
+  `Company` int(11) NOT NULL,
   `Region` varchar(50) NOT NULL,
   `Opisanie_raboti` text NOT NULL,
   PRIMARY KEY (`id_vakansii`),
   KEY `Company` (`Company`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
-
---
--- Дамп данных таблицы `vacansii`
---
-
-INSERT INTO `vacansii` (`id_vakansii`, `Doljnost`, `Oklad`, `Trebovaniya`, `Company`, `Region`, `Opisanie_raboti`) VALUES
-(1, 'Программист', 10000, '1С, С++, php, sql', 'Google', 'Russia', 'сидеть и валять дурака'),
-(2, 'Программист', 78, 'шоло', 'Microsoft', 'Russia', 'ррр');
 
 --
 -- Ограничения внешнего ключа сохраненных таблиц
@@ -144,7 +135,7 @@ ALTER TABLE `rezume`
 -- Ограничения внешнего ключа таблицы `vacansii`
 --
 ALTER TABLE `vacansii`
-  ADD CONSTRAINT `vacansii_ibfk_1` FOREIGN KEY (`Company`) REFERENCES `companies` (`Company`) ON DELETE CASCADE;
+  ADD CONSTRAINT `vacansii_ibfk_1` FOREIGN KEY (`Company`) REFERENCES `companies` (`id_Company`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
