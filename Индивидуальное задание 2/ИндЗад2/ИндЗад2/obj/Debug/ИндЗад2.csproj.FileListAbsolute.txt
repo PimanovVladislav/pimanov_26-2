@@ -1,0 +1,10 @@
+C:\Users\Владислав\Documents\Zhuck\pimanov_26-2\Индивидуальное задание 2\ИндЗад2\ИндЗад2\bin\Debug\ИндЗад2.exe.config
+C:\Users\Владислав\Documents\Zhuck\pimanov_26-2\Индивидуальное задание 2\ИндЗад2\ИндЗад2\bin\Debug\ИндЗад2.exe
+C:\Users\Владислав\Documents\Zhuck\pimanov_26-2\Индивидуальное задание 2\ИндЗад2\ИндЗад2\bin\Debug\ИндЗад2.pdb
+C:\Users\Владислав\Documents\Zhuck\pimanov_26-2\Индивидуальное задание 2\ИндЗад2\ИндЗад2\obj\Debug\ИндЗад2.csprojAssemblyReference.cache
+C:\Users\Владислав\Documents\Zhuck\pimanov_26-2\Индивидуальное задание 2\ИндЗад2\ИндЗад2\obj\Debug\ИндЗад2.Form1.resources
+C:\Users\Владислав\Documents\Zhuck\pimanov_26-2\Индивидуальное задание 2\ИндЗад2\ИндЗад2\obj\Debug\ИндЗад2.Properties.Resources.resources
+C:\Users\Владислав\Documents\Zhuck\pimanov_26-2\Индивидуальное задание 2\ИндЗад2\ИндЗад2\obj\Debug\ИндЗад2.csproj.GenerateResource.cache
+C:\Users\Владислав\Documents\Zhuck\pimanov_26-2\Индивидуальное задание 2\ИндЗад2\ИндЗад2\obj\Debug\ИндЗад2.csproj.CoreCompileInputs.cache
+C:\Users\Владислав\Documents\Zhuck\pimanov_26-2\Индивидуальное задание 2\ИндЗад2\ИндЗад2\obj\Debug\ИндЗад2.exe
+C:\Users\Владислав\Documents\Zhuck\pimanov_26-2\Индивидуальное задание 2\ИндЗад2\ИндЗад2\obj\Debug\ИндЗад2.pdb

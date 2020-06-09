@@ -16,5 +16,32 @@ namespace ИндЗад2
         {
             InitializeComponent();
         }
+
+        private void btn_Company_Click(object sender, EventArgs e)
+        {
+            FormCompany comp = new FormCompany();
+            comp.Owner = this;
+            comp.Show();
+        }
+
+        private void btn_Vacanse_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Rezume_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Clients_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_workers_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
