@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Июн 09 2020 г., 13:45
+-- Время создания: Июн 09 2020 г., 14:52
 -- Версия сервера: 5.5.25
 -- Версия PHP: 5.3.13
 
@@ -45,6 +45,21 @@ CREATE TABLE IF NOT EXISTS `companies` (
 INSERT INTO `companies` (`id_Company`, `Company`, `Region`, `Kont_data`, `Prof_Napr`, `Type`, `Info`) VALUES
 (1, 'Google', 'Russia', 'Alex 4-07-75', 'Programming', 'Коммерческая компани', 'Типо что-то там'),
 (2, 'Microsoft', 'USA', 'Gates 2-54-66', 'Programming', 'Коммерческая компани', 'Тоже пара ласковых словечек');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `rabotniki`
+--
+
+CREATE TABLE IF NOT EXISTS `rabotniki` (
+  `Company` int(11) NOT NULL,
+  `Vakansiya` int(11) NOT NULL,
+  `User` int(11) unsigned NOT NULL,
+  KEY `Company` (`Company`,`Vakansiya`,`User`),
+  KEY `Vakansiya` (`Vakansiya`),
+  KEY `User` (`User`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -110,6 +125,14 @@ INSERT INTO `vacansii` (`id_vakansii`, `Doljnost`, `Oklad`, `Trebovaniya`, `Comp
 --
 -- Ограничения внешнего ключа сохраненных таблиц
 --
+
+--
+-- Ограничения внешнего ключа таблицы `rabotniki`
+--
+ALTER TABLE `rabotniki`
+  ADD CONSTRAINT `rabotniki_ibfk_3` FOREIGN KEY (`User`) REFERENCES `soiskateli` (`id_users`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `rabotniki_ibfk_1` FOREIGN KEY (`Company`) REFERENCES `companies` (`id_Company`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `rabotniki_ibfk_2` FOREIGN KEY (`Vakansiya`) REFERENCES `vacansii` (`id_vakansii`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Ограничения внешнего ключа таблицы `rezume`
