@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,41 +17,28 @@ namespace ИндЗад2
         public FormCompany()
         {
             InitializeComponent();
-            LoadData();
-        }
-
-        private void LoadData()
-        {
-            string connectString = "Data Source=.\\SQLEXPRESS;Initial Catalog=LSTU_Schedule_autumn20172018;" +
-                "Integrated Security=true;";
-
-            SqlConnection myConnection = new SqlConnection(connectString);
-
-            myConnection.Open();
-
-            string query = "SELECT * FROM Faculty ORDER BY fac_id";
-
-            SqlCommand command = new SqlCommand(query, myConnection);
-
-            SqlDataReader reader = command.ExecuteReader();
-
-            List<string[]> data = new List<string[]>();
-
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.AllowUserToAddRows = false;
+            string connStr = "server=localhost;user=root;database=birjha_truda;";
+            // создаём объект для подключения к БД
+            MySqlConnection connection = new MySqlConnection(connStr);
+            connection.Open();
+            string sql = "SELECT id_Company,Company,Region,Kont_data, Prof_Napr, Type, Info FROM companies ";
+            MySqlCommand command = new MySqlCommand(sql, connection);
+            MySqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                data.Add(new string[3]);
-
-                data[data.Count - 1][0] = reader[0].ToString();
-                data[data.Count - 1][1] = reader[1].ToString();
-                data[data.Count - 1][2] = reader[2].ToString();
+                dataGridView1.Rows.Add(reader[0], reader[1], reader[2], reader[3], reader[4], reader[5]);
             }
-
             reader.Close();
-
-            myConnection.Close();
-
-            foreach (string[] s in data)
-                dataGridView1.Rows.Add(s);
+        }
+        
+        private void addbtn_Click(object sender, EventArgs e)
+        {
+            FormAdd comp = new FormAdd();
+            comp.Owner = this;
+            comp.Show();
         }
     }
+
 }
