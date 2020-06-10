@@ -96,6 +96,24 @@
     <Compile Include="FormDeleted.Designer.cs">
       <DependentUpon>FormDeleted.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRezume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRezume.Designer.cs">
+      <DependentUpon>FormRezume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUser.Designer.cs">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVacanse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVacanse.Designer.cs">
+      <DependentUpon>FormVacanse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -112,6 +130,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDeleted.resx">
       <DependentUpon>FormDeleted.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRezume.resx">
+      <DependentUpon>FormRezume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUser.resx">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVacanse.resx">
+      <DependentUpon>FormVacanse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
