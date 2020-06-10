@@ -26,22 +26,30 @@ namespace ИндЗад2
 
         private void btn_Vacanse_Click(object sender, EventArgs e)
         {
-
+            FormVacanse comp = new FormVacanse();
+            comp.Owner = this;
+            comp.Show();
         }
 
         private void btn_Rezume_Click(object sender, EventArgs e)
         {
-
+            FormRezume comp = new FormRezume();
+            comp.Owner = this;
+            comp.Show();
         }
 
         private void btn_Clients_Click(object sender, EventArgs e)
         {
-
+            FormUser comp = new FormUser();
+            comp.Owner = this;
+            comp.Show();
         }
 
         private void btn_workers_Click(object sender, EventArgs e)
         {
-
+            FormCompanies comp = new FormCompanies();
+            comp.Owner = this;
+            comp.Show();
         }
     }
 }
