@@ -34,7 +34,7 @@ namespace ИндЗад2
 
         private void addbtn_Click(object sender, EventArgs e)
         {
-            FormAdd comp = new FormAdd();
+            FormAdd1 comp = new FormAdd1();
             comp.Owner = this;
             comp.Show();
         }
@@ -45,7 +45,7 @@ namespace ИндЗад2
             string connStr = "server=localhost;user=root;database=birjha_truda;";
             MySqlConnection connection = new MySqlConnection(connStr);
             connection.Open();
-            string sql = "SELECT Company,Region,Kont_data, Prof_Napr, Type, Info FROM companies ";
+            string sql = "SELECT `id_users`, `Last_name`, `Name`, `Father_name`, `Pol`, `Age`, `Pasport`, `Info` FROM `soiskateli` ";
             MySqlCommand command = new MySqlCommand(sql, connection);
             MySqlDataReader reader = command.ExecuteReader();
             while (reader.Read())

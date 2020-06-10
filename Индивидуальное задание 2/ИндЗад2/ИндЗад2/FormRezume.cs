@@ -46,7 +46,7 @@ namespace ИндЗад2
             string connStr = "server=localhost;user=root;database=birjha_truda;";
             MySqlConnection connection = new MySqlConnection(connStr);
             connection.Open();
-            string sql = "SELECT Company,Region,Kont_data, Prof_Napr, Type, Info FROM companies ";
+            string sql = "SELECT `User`, `Doljnost`, `Oklad`, `Staj`, `Region`, `Graphic`, `Info` FROM `rezume`";
             MySqlCommand command = new MySqlCommand(sql, connection);
             MySqlDataReader reader = command.ExecuteReader();
             while (reader.Read())

@@ -78,6 +78,24 @@
     <Compile Include="FormAdd.Designer.cs">
       <DependentUpon>FormAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAdd1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdd1.Designer.cs">
+      <DependentUpon>FormAdd1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdd2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdd2.Designer.cs">
+      <DependentUpon>FormAdd2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdd3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdd3.Designer.cs">
+      <DependentUpon>FormAdd3.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormChanged.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +139,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdd.resx">
       <DependentUpon>FormAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdd1.resx">
+      <DependentUpon>FormAdd1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdd2.resx">
+      <DependentUpon>FormAdd2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormChanged.resx">
       <DependentUpon>FormChanged.cs</DependentUpon>

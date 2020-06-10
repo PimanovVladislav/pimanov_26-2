@@ -31,3 +31,5 @@ C:\Users\Владислав\Documents\Zhuck\pimanov_26-2\Индивидуаль�
 C:\Users\Владислав\Documents\Zhuck\pimanov_26-2\Индивидуальное задание 2\ИндЗад2\ИндЗад2\obj\Debug\ИндЗад2.FormRezume.resources
 C:\Users\Владислав\Documents\Zhuck\pimanov_26-2\Индивидуальное задание 2\ИндЗад2\ИндЗад2\obj\Debug\ИндЗад2.FormUser.resources
 C:\Users\Владислав\Documents\Zhuck\pimanov_26-2\Индивидуальное задание 2\ИндЗад2\ИндЗад2\obj\Debug\ИндЗад2.FormVacanse.resources
+C:\Users\Владислав\Documents\Zhuck\pimanov_26-2\Индивидуальное задание 2\ИндЗад2\ИндЗад2\obj\Debug\ИндЗад2.FormAdd1.resources
+C:\Users\Владислав\Documents\Zhuck\pimanov_26-2\Индивидуальное задание 2\ИндЗад2\ИндЗад2\obj\Debug\ИндЗад2.FormAdd2.resources

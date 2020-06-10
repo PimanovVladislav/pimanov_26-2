@@ -21,7 +21,7 @@ namespace ИндЗад2
             // создаём объект для подключения к БД
             MySqlConnection connection = new MySqlConnection(connStr);
             connection.Open();
-            string sql = "SELECT id_Company,Company,Region,Kont_data, Prof_Napr, Type, Info FROM companies ";
+            string sql = "SELECT `id_vakansii`, `Doljnost`, `Oklad`, `Trebovaniya`, `Company`, `Region`, `Opisanie_raboti` FROM `vacansii` ";
             MySqlCommand command = new MySqlCommand(sql, connection);
             MySqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
@@ -34,7 +34,7 @@ namespace ИндЗад2
 
         private void addbtn_Click(object sender, EventArgs e)
         {
-            FormAdd comp = new FormAdd();
+            FormAdd2 comp = new FormAdd2();
             comp.Owner = this;
             comp.Show();
         }
