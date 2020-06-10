@@ -42,9 +42,8 @@ namespace ИндЗад2
             connection.Open();
             string sql = "SELECT `id_Company` FROM `companies` WHERE Company = '" + comboBoxCorp.SelectedItem+"'";
             MySqlCommand command = new MySqlCommand(sql, connection);
-            MySqlDataReader reader = command.ExecuteReader();
-            string S = reader[0].ToString();
-            reader.Close();
+            string S = command.ExecuteScalar().ToString();      
+
             sql = "INSERT INTO `vacansii`(`id_vakansii`, `Doljnost`, `Oklad`, `Trebovaniya`, `Company`, `Region`, `Opisanie_raboti`) VALUES " +
                 "(NULL, '" + Dolj.Text + "','" + Oklad.Text + "','" + Treb.Text + "','"+ S
                 + "','" + Region.Text + "','" + Info.Text + "');";

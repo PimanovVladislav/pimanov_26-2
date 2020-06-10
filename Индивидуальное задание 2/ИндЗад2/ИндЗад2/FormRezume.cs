@@ -35,7 +35,7 @@ namespace ИндЗад2
 
         private void addbtn_Click(object sender, EventArgs e)
         {
-            FormAdd comp = new FormAdd();
+            FormAdd3 comp = new FormAdd3();
             comp.Owner = this;
             comp.Show();
         }
@@ -51,7 +51,7 @@ namespace ИндЗад2
             MySqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                dataGridView1.Rows.Add(reader[0], reader[1], reader[2], reader[3], reader[4], reader[5]);
+                dataGridView1.Rows.Add(reader[1], reader[2], reader[3], reader[4], reader[5], reader[6]);
             }
             reader.Close();
             connection.Close();

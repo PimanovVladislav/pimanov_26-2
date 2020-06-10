@@ -24,7 +24,7 @@ namespace ИндЗад2
             // создаём объект для подключения к БД
             MySqlConnection connection = new MySqlConnection(connStr);
             connection.Open();
-            string sql = "IINSERT INTO `soiskateli`(`id_users`, `Last_name`, `Name`, `Father_name`, `Pol`, `Age`, `Pasport`, `Info`) VALUES " +
+            string sql = "INSERT INTO `soiskateli`(`id_users`, `Last_name`, `Name`, `Father_name`, `Pol`, `Age`, `Pasport`, `Info`) VALUES " +
                 "(NULL, '" + Fam.Text + "','" + Ima.Text + "','" + Otch.Text + "','" +Pol.Text
                 + "','" +Age.Text + "','" + Pasport.Text + "','" + Inf.Text + "');";
             MySqlCommand command = new MySqlCommand(sql, connection);

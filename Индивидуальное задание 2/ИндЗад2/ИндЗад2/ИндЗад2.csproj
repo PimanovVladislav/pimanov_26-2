@@ -146,6 +146,9 @@
     <EmbeddedResource Include="FormAdd2.resx">
       <DependentUpon>FormAdd2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAdd3.resx">
+      <DependentUpon>FormAdd3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormChanged.resx">
       <DependentUpon>FormChanged.cs</DependentUpon>
     </EmbeddedResource>

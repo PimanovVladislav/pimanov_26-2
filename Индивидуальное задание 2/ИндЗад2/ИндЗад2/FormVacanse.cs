@@ -50,7 +50,7 @@ namespace ИндЗад2
             MySqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                dataGridView1.Rows.Add(reader[0], reader[1], reader[2], reader[3], reader[4], reader[5]);
+                dataGridView1.Rows.Add(reader[1], reader[2], reader[3], reader[4], reader[5], reader[6]);
             }
             reader.Close();
             connection.Close();
