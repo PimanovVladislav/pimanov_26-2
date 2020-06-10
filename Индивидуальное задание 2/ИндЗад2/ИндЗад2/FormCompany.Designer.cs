@@ -1,6 +1,6 @@
 ﻿namespace ИндЗад2
 {
-    partial class FormCompany
+    partial class FormCompanies
     {
         /// <summary>
         /// Required designer variable.
@@ -32,8 +32,8 @@
             this.addbtn = new System.Windows.Forms.Button();
             this.Changebtn = new System.Windows.Forms.Button();
             this.deletebtn = new System.Windows.Forms.Button();
-            this.Savebtn = new System.Windows.Forms.Button();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ObnBtn = new System.Windows.Forms.Button();
+            this.Company = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.region = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Call_data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Prof_napr = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,20 +46,20 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Name,
+            this.Company,
             this.region,
             this.Call_data,
             this.Prof_napr,
             this.Type,
             this.Info});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(744, 351);
+            this.dataGridView1.Size = new System.Drawing.Size(765, 342);
             this.dataGridView1.TabIndex = 0;
             // 
             // addbtn
             // 
-            this.addbtn.Location = new System.Drawing.Point(753, 42);
+            this.addbtn.Location = new System.Drawing.Point(783, 42);
             this.addbtn.Name = "addbtn";
             this.addbtn.Size = new System.Drawing.Size(100, 23);
             this.addbtn.TabIndex = 1;
@@ -69,35 +69,39 @@
             // 
             // Changebtn
             // 
-            this.Changebtn.Location = new System.Drawing.Point(753, 71);
+            this.Changebtn.Location = new System.Drawing.Point(783, 71);
             this.Changebtn.Name = "Changebtn";
             this.Changebtn.Size = new System.Drawing.Size(100, 23);
             this.Changebtn.TabIndex = 2;
             this.Changebtn.Text = "Изменить";
             this.Changebtn.UseVisualStyleBackColor = true;
+            this.Changebtn.Click += new System.EventHandler(this.Changebtn_Click);
             // 
             // deletebtn
             // 
-            this.deletebtn.Location = new System.Drawing.Point(753, 100);
+            this.deletebtn.Location = new System.Drawing.Point(782, 100);
             this.deletebtn.Name = "deletebtn";
             this.deletebtn.Size = new System.Drawing.Size(100, 23);
             this.deletebtn.TabIndex = 3;
             this.deletebtn.Text = "Удалить";
             this.deletebtn.UseVisualStyleBackColor = true;
+            this.deletebtn.Click += new System.EventHandler(this.deletebtn_Click);
             // 
-            // Savebtn
+            // ObnBtn
             // 
-            this.Savebtn.Location = new System.Drawing.Point(753, 129);
-            this.Savebtn.Name = "Savebtn";
-            this.Savebtn.Size = new System.Drawing.Size(100, 23);
-            this.Savebtn.TabIndex = 4;
-            this.Savebtn.Text = "Сохранить";
-            this.Savebtn.UseVisualStyleBackColor = true;
+            this.ObnBtn.Location = new System.Drawing.Point(783, 129);
+            this.ObnBtn.Name = "ObnBtn";
+            this.ObnBtn.Size = new System.Drawing.Size(100, 23);
+            this.ObnBtn.TabIndex = 5;
+            this.ObnBtn.Text = "Обновить";
+            this.ObnBtn.UseVisualStyleBackColor = true;
+            this.ObnBtn.Click += new System.EventHandler(this.ObnBtn_Click);
             // 
-            // Name
+            // Company
             // 
-            this.Name.HeaderText = "Название компании";
-            this.Name.Name = "Name";
+            this.Company.HeaderText = "Название компании";
+            this.Company.Name = "Company";
+            this.Company.Width = 120;
             // 
             // region
             // 
@@ -123,19 +127,20 @@
             // 
             this.Info.HeaderText = "О компании";
             this.Info.Name = "Info";
+            this.Info.Width = 200;
             // 
-            // FormCompany
+            // FormCompanies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(865, 366);
-            this.Controls.Add(this.Savebtn);
+            this.ClientSize = new System.Drawing.Size(894, 366);
+            this.Controls.Add(this.ObnBtn);
             this.Controls.Add(this.deletebtn);
             this.Controls.Add(this.Changebtn);
             this.Controls.Add(this.addbtn);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "FormCompany";
-            this.Text = "FormCompany";
+            this.Name = "FormCompanies";
+            this.Text = "FormCompanies";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -147,8 +152,8 @@
         private System.Windows.Forms.Button addbtn;
         private System.Windows.Forms.Button Changebtn;
         private System.Windows.Forms.Button deletebtn;
-        private System.Windows.Forms.Button Savebtn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        private System.Windows.Forms.Button ObnBtn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Company;
         private System.Windows.Forms.DataGridViewTextBoxColumn region;
         private System.Windows.Forms.DataGridViewTextBoxColumn Call_data;
         private System.Windows.Forms.DataGridViewTextBoxColumn Prof_napr;

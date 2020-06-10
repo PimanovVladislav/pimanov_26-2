@@ -12,9 +12,9 @@ using System.Data.SqlClient;
 
 namespace ИндЗад2
 {
-    public partial class FormCompany : Form
+    public partial class FormCompanies : Form
     {
-        public FormCompany()
+        public FormCompanies()
         {
             InitializeComponent();
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -28,14 +28,46 @@ namespace ИндЗад2
             MySqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                dataGridView1.Rows.Add(reader[0], reader[1], reader[2], reader[3], reader[4], reader[5]);
+                dataGridView1.Rows.Add( reader[1], reader[2], reader[3], reader[4], reader[5],reader[6]);
             }
             reader.Close();
+            connection.Close();            
         }
         
         private void addbtn_Click(object sender, EventArgs e)
         {
             FormAdd comp = new FormAdd();
+            comp.Owner = this;
+            comp.Show();
+        }
+
+        private void ObnBtn_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Clear();
+            string connStr = "server=localhost;user=root;database=birjha_truda;";
+            MySqlConnection connection = new MySqlConnection(connStr);
+            connection.Open();
+            string sql = "SELECT Company,Region,Kont_data, Prof_Napr, Type, Info FROM companies ";
+            MySqlCommand command = new MySqlCommand(sql, connection);
+            MySqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                dataGridView1.Rows.Add(reader[0], reader[1], reader[2], reader[3], reader[4], reader[5]);
+            }
+            reader.Close();
+            connection.Close();
+        }
+
+        private void Changebtn_Click(object sender, EventArgs e)
+        {
+            FormChanged comp = new FormChanged();
+            comp.Owner = this;
+            comp.Show();
+        }
+
+        private void deletebtn_Click(object sender, EventArgs e)
+        {
+            FormDeleted comp = new FormDeleted();
             comp.Owner = this;
             comp.Show();
         }

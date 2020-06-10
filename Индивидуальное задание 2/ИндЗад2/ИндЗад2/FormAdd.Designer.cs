@@ -34,12 +34,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
+            this.Company = new System.Windows.Forms.RichTextBox();
+            this.Region = new System.Windows.Forms.RichTextBox();
+            this.Kont_data = new System.Windows.Forms.RichTextBox();
+            this.Napr = new System.Windows.Forms.RichTextBox();
+            this.Type = new System.Windows.Forms.RichTextBox();
+            this.Info = new System.Windows.Forms.RichTextBox();
+            this.Insertbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -81,7 +82,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(28, 180);
+            this.label5.Location = new System.Drawing.Point(28, 175);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 13);
             this.label5.TabIndex = 4;
@@ -90,71 +91,82 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(28, 218);
+            this.label6.Location = new System.Drawing.Point(28, 213);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 13);
             this.label6.TabIndex = 5;
             this.label6.Text = "О компании";
             // 
-            // richTextBox1
+            // Company
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(171, 12);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(219, 21);
-            this.richTextBox1.TabIndex = 6;
-            this.richTextBox1.Text = "";
+            this.Company.Location = new System.Drawing.Point(171, 12);
+            this.Company.Name = "Company";
+            this.Company.Size = new System.Drawing.Size(219, 21);
+            this.Company.TabIndex = 6;
+            this.Company.Text = "";
             // 
-            // richTextBox2
+            // Region
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(171, 50);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(219, 21);
-            this.richTextBox2.TabIndex = 7;
-            this.richTextBox2.Text = "";
+            this.Region.Location = new System.Drawing.Point(171, 50);
+            this.Region.Name = "Region";
+            this.Region.Size = new System.Drawing.Size(219, 21);
+            this.Region.TabIndex = 7;
+            this.Region.Text = "";
             // 
-            // richTextBox3
+            // Kont_data
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(171, 89);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(219, 21);
-            this.richTextBox3.TabIndex = 8;
-            this.richTextBox3.Text = "";
+            this.Kont_data.Location = new System.Drawing.Point(171, 89);
+            this.Kont_data.Name = "Kont_data";
+            this.Kont_data.Size = new System.Drawing.Size(219, 21);
+            this.Kont_data.TabIndex = 8;
+            this.Kont_data.Text = "";
             // 
-            // richTextBox4
+            // Napr
             // 
-            this.richTextBox4.Location = new System.Drawing.Point(171, 128);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(219, 21);
-            this.richTextBox4.TabIndex = 9;
-            this.richTextBox4.Text = "";
+            this.Napr.Location = new System.Drawing.Point(171, 128);
+            this.Napr.Name = "Napr";
+            this.Napr.Size = new System.Drawing.Size(219, 21);
+            this.Napr.TabIndex = 9;
+            this.Napr.Text = "";
             // 
-            // richTextBox5
+            // Type
             // 
-            this.richTextBox5.Location = new System.Drawing.Point(171, 172);
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.Size = new System.Drawing.Size(219, 21);
-            this.richTextBox5.TabIndex = 10;
-            this.richTextBox5.Text = "";
+            this.Type.Location = new System.Drawing.Point(171, 172);
+            this.Type.Name = "Type";
+            this.Type.Size = new System.Drawing.Size(219, 21);
+            this.Type.TabIndex = 10;
+            this.Type.Text = "";
             // 
-            // richTextBox6
+            // Info
             // 
-            this.richTextBox6.Location = new System.Drawing.Point(171, 210);
-            this.richTextBox6.Name = "richTextBox6";
-            this.richTextBox6.Size = new System.Drawing.Size(219, 21);
-            this.richTextBox6.TabIndex = 11;
-            this.richTextBox6.Text = "";
+            this.Info.Location = new System.Drawing.Point(171, 210);
+            this.Info.Name = "Info";
+            this.Info.Size = new System.Drawing.Size(219, 21);
+            this.Info.TabIndex = 11;
+            this.Info.Text = "";
+            // 
+            // Insertbtn
+            // 
+            this.Insertbtn.Location = new System.Drawing.Point(134, 273);
+            this.Insertbtn.Name = "Insertbtn";
+            this.Insertbtn.Size = new System.Drawing.Size(100, 23);
+            this.Insertbtn.TabIndex = 12;
+            this.Insertbtn.Text = "Добавить";
+            this.Insertbtn.UseVisualStyleBackColor = true;
+            this.Insertbtn.Click += new System.EventHandler(this.Insertbtn_Click);
             // 
             // FormAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(420, 354);
-            this.Controls.Add(this.richTextBox6);
-            this.Controls.Add(this.richTextBox5);
-            this.Controls.Add(this.richTextBox4);
-            this.Controls.Add(this.richTextBox3);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.Insertbtn);
+            this.Controls.Add(this.Info);
+            this.Controls.Add(this.Type);
+            this.Controls.Add(this.Napr);
+            this.Controls.Add(this.Kont_data);
+            this.Controls.Add(this.Region);
+            this.Controls.Add(this.Company);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -176,11 +188,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.RichTextBox richTextBox3;
-        private System.Windows.Forms.RichTextBox richTextBox4;
-        private System.Windows.Forms.RichTextBox richTextBox5;
-        private System.Windows.Forms.RichTextBox richTextBox6;
+        private System.Windows.Forms.RichTextBox Company;
+        private System.Windows.Forms.RichTextBox Region;
+        private System.Windows.Forms.RichTextBox Kont_data;
+        private System.Windows.Forms.RichTextBox Napr;
+        private System.Windows.Forms.RichTextBox Type;
+        private System.Windows.Forms.RichTextBox Info;
+        private System.Windows.Forms.Button Insertbtn;
     }
 }

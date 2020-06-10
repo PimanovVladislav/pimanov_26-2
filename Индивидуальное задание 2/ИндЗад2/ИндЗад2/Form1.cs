@@ -19,7 +19,7 @@ namespace ИндЗад2
 
         private void btn_Company_Click(object sender, EventArgs e)
         {
-            FormCompany comp = new FormCompany();
+            FormCompanies comp = new FormCompanies();
             comp.Owner = this;
             comp.Show();
         }
