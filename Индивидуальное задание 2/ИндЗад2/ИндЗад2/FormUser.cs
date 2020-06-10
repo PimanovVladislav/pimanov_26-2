@@ -58,7 +58,7 @@ namespace ИндЗад2
 
         private void Changebtn_Click(object sender, EventArgs e)
         {
-            FormChanged comp = new FormChanged();
+            FormChanged1 comp = new FormChanged1();
             comp.Owner = this;
             comp.Show();
         }

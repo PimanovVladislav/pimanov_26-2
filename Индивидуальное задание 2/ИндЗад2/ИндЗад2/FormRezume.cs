@@ -59,7 +59,7 @@ namespace ИндЗад2
 
         private void Changebtn_Click(object sender, EventArgs e)
         {
-            FormChanged comp = new FormChanged();
+            FormChanged2 comp = new FormChanged2();
             comp.Owner = this;
             comp.Show();
         }

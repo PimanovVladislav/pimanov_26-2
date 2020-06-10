@@ -11,56 +11,56 @@ using System.Windows.Forms;
 
 namespace ИндЗад2
 {
-    public partial class FormVacanse : Form
+    public partial class FormWorkers : Form
     {
-        public FormVacanse()
+        public FormWorkers()
         {
-            InitializeComponent(); dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            InitializeComponent();
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.AllowUserToAddRows = false;
             string connStr = "server=localhost;user=root;database=birjha_truda;";
             // создаём объект для подключения к БД
             MySqlConnection connection = new MySqlConnection(connStr);
             connection.Open();
-            string sql = "SELECT `id_vakansii`, `Doljnost`, `Oklad`, `Trebovaniya`, `Company`, `Region`, `Opisanie_raboti` FROM `vacansii` ";
+            string sql = "SELECT companies.Company, vacansii.Doljnost, vacansii.Oklad,soiskateli.Last_name,vacansii.Region,vacansii.Opisanie_raboti FROM `rabotniki` " +
+                 "JOIN `companies` using(Company)" +
+                 " JOIN `soiskateli`  ON soiskateli.id_users=rabotniki.User" +
+                 " JOIN `vacansii`  ON vacansii.id_vakansii=rabotniki.Vakansiya";
             MySqlCommand command = new MySqlCommand(sql, connection);
             MySqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                dataGridView1.Rows.Add(reader[1], reader[2], reader[3], reader[4], reader[5], reader[6]);
+                dataGridView1.Rows.Add(reader[0], reader[1], reader[2]);
             }
             reader.Close();
             connection.Close();
         }
 
-        private void addbtn_Click(object sender, EventArgs e)
+        private void Addbtn_Click(object sender, EventArgs e)
         {
-            FormAdd2 comp = new FormAdd2();
+            FormAddWorker comp = new FormAddWorker();
             comp.Owner = this;
             comp.Show();
         }
 
-        private void ObnBtn_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             dataGridView1.Rows.Clear();
             string connStr = "server=localhost;user=root;database=birjha_truda;";
             MySqlConnection connection = new MySqlConnection(connStr);
             connection.Open();
-            string sql = "SELECT `id_vakansii`, `Doljnost`, `Oklad`, `Trebovaniya`, `Company`, `Region`, `Opisanie_raboti` FROM `vacansii` ";
+            string sql = "SELECT companies.Company, vacansii.Doljnost, vacansii.Oklad,soiskateli.Last_name,vacansii.Region,vacansii.Opisanie_raboti FROM `rabotniki` " +
+                "JOIN `companies` using(Company)" +
+                " JOIN `soiskateli`  ON soiskateli.id_users=rabotniki.User" +
+                " JOIN `vacansii`  ON vacansii.id_vakansii=rabotniki.Vakansiya";
             MySqlCommand command = new MySqlCommand(sql, connection);
             MySqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                dataGridView1.Rows.Add(reader[1], reader[2], reader[3], reader[4], reader[5], reader[6]);
+                dataGridView1.Rows.Add(reader[0], reader[1], reader[2], reader[3], reader[4], reader[5], reader[6]);
             }
             reader.Close();
             connection.Close();
-        }
-
-        private void Changebtn_Click(object sender, EventArgs e)
-        {
-            FormChanged3 comp = new FormChanged3();
-            comp.Owner = this;
-            comp.Show();
         }
 
         private void deletebtn_Click(object sender, EventArgs e)

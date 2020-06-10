@@ -47,7 +47,7 @@ namespace ИндЗад2
 
         private void btn_workers_Click(object sender, EventArgs e)
         {
-            FormCompanies comp = new FormCompanies();
+            FormWorkers comp = new FormWorkers();
             comp.Owner = this;
             comp.Show();
         }
