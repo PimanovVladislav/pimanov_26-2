@@ -22,15 +22,15 @@ namespace ИндЗад2
             // создаём объект для подключения к БД
             MySqlConnection connection = new MySqlConnection(connStr);
             connection.Open();
-            string sql = "SELECT companies.Company, vacansii.Doljnost, vacansii.Oklad,soiskateli.Last_name,vacansii.Region,vacansii.Opisanie_raboti FROM `rabotniki` " +
-                 "JOIN `companies` using(Company)" +
-                 " JOIN `soiskateli`  ON soiskateli.id_users=rabotniki.User" +
-                 " JOIN `vacansii`  ON vacansii.id_vakansii=rabotniki.Vakansiya";
+            string sql = "SELECT companies.Company, vacansii.Doljnost, vacansii.Oklad, soiskateli.Last_name, vacansii.Region, vacansii.Opisanie_raboti FROM `rabotniki` " +
+               "JOIN `companies` ON companies.id_Company = rabotniki.Company" +
+               " JOIN `soiskateli`  ON soiskateli.id_users=rabotniki.User" +
+               " JOIN `vacansii`  ON vacansii.id_vakansii=rabotniki.Vakansiya";
             MySqlCommand command = new MySqlCommand(sql, connection);
             MySqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                dataGridView1.Rows.Add(reader[0], reader[1], reader[2]);
+                dataGridView1.Rows.Add(reader[0], reader[1], reader[2], reader[3], reader[4], reader[5]);
             }
             reader.Close();
             connection.Close();
@@ -49,15 +49,15 @@ namespace ИндЗад2
             string connStr = "server=localhost;user=root;database=birjha_truda;";
             MySqlConnection connection = new MySqlConnection(connStr);
             connection.Open();
-            string sql = "SELECT companies.Company, vacansii.Doljnost, vacansii.Oklad,soiskateli.Last_name,vacansii.Region,vacansii.Opisanie_raboti FROM `rabotniki` " +
-                "JOIN `companies` using(Company)" +
+            string sql = "SELECT companies.Company, vacansii.Doljnost, vacansii.Oklad, soiskateli.Last_name, vacansii.Region, vacansii.Opisanie_raboti FROM `rabotniki` " +
+                "JOIN `companies` ON companies.id_Company = rabotniki.Company" +
                 " JOIN `soiskateli`  ON soiskateli.id_users=rabotniki.User" +
                 " JOIN `vacansii`  ON vacansii.id_vakansii=rabotniki.Vakansiya";
             MySqlCommand command = new MySqlCommand(sql, connection);
             MySqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                dataGridView1.Rows.Add(reader[0], reader[1], reader[2], reader[3], reader[4], reader[5], reader[6]);
+                dataGridView1.Rows.Add(reader[0], reader[1], reader[2], reader[3], reader[4], reader[5]);
             }
             reader.Close();
             connection.Close();

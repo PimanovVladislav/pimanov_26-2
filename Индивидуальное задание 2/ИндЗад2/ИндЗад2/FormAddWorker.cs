@@ -32,11 +32,12 @@ namespace ИндЗад2
             reader.Close();
             connection.Close();
             connection.Open();
-            sql = "SELECT Doljnost FROM vakansii";
-            MySqlDataReader reader1 = command.ExecuteReader();
+            string sql1 = "SELECT Doljnost FROM `vacansii`";
+            MySqlCommand command1 = new MySqlCommand(sql1, connection);
+            MySqlDataReader reader1 = command1.ExecuteReader();
             while (reader1.Read())
             {
-                comboBox1.Items.Add(reader[0]);
+                comboBoxCorp.Items.Add(reader1[0]);
             }
             reader1.Close();
             connection.Close();
@@ -49,21 +50,25 @@ namespace ИндЗад2
             MySqlConnection connection = new MySqlConnection(connStr);
             connection.Open();
             string S1, S2, S3,S4;
-            string sql = "SELECT id_users FROM soiskateli WHERE Pasport =" + comboBox1.SelectedItem;
+            string sql = "SELECT `id_users` FROM soiskateli WHERE `Pasport` = " + comboBox1.SelectedItem ;
             MySqlCommand command = new MySqlCommand(sql, connection);
             S1 = command.ExecuteScalar().ToString();
-            sql = "SELECT id_vakansii FROM vacansii WHERE Doljnost =" + comboBoxCorp.SelectedItem;
-            S2 = command.ExecuteScalar().ToString();
-            sql = "SELECT Company FROM vacansii WHERE Doljnost =" + comboBoxCorp.SelectedItem;
-            S3 = command.ExecuteScalar().ToString();
-            sql = "SELECT id_Company FROM companies WHERE Company =" + S2;
-            S4 = command.ExecuteScalar().ToString();
+            string sql1 = "SELECT `id_vakansii`FROM `vacansii` WHERE `Doljnost` = '" + comboBoxCorp.SelectedItem+"'";
+            MySqlCommand command1 = new MySqlCommand(sql1, connection);
+            S2 = command1.ExecuteScalar().ToString();
+            string sql2 = "SELECT `Company` FROM vacansii WHERE `Doljnost` = '" + comboBoxCorp.SelectedItem + "'";
+            MySqlCommand command2 = new MySqlCommand(sql2, connection);
+            S3 = command2.ExecuteScalar().ToString();
+            // string sql3 = "SELECT `id_Company FROM companies WHERE `Company` =" + S2;
+            //MySqlCommand command3 = new MySqlCommand(sql3, connection);
+            //S4 = command3.ExecuteScalar().ToString();
 
             sql = "INSERT INTO `rabotniki`(`Company`, `Vakansiya`, `User`) VALUES " +
-                "('" + S1 + "','" + S2 + "','" + S4 +"');";
+                "(" + S3 + "," + S2 + "," + S1 +");";
             
             command.ExecuteNonQuery();
             connection.Close();
+            richTextBox1.AppendText("Заявка принята. \n Можете закрыть окно");
         }
     }
 }

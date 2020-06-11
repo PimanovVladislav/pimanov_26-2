@@ -39,6 +39,7 @@ namespace ИндЗад2
             connection.Close();
             richTextBox1.Clear();
             richTextBox2.Clear();
+            
         }
     }
 }
