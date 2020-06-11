@@ -33,7 +33,7 @@ namespace ИндЗад2
             string connStr = "server=localhost;user=root;database=birjha_truda;";
             MySqlConnection connection = new MySqlConnection(connStr);
             connection.Open();
-            string sql = "UPDATE `companies` SET `" + S + "` = '" + richTextBox1.Text + "'" + " WHERE Pasport = '" + richTextBox2.Text + "'";
+            string sql = "UPDATE `soiskateli` SET `" + S + "` = '" + richTextBox1.Text + "'" + " WHERE Pasport = '" + richTextBox2.Text + "'";
             MySqlCommand command = new MySqlCommand(sql, connection);
             command.ExecuteNonQuery();
             connection.Close();
