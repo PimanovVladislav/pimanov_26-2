@@ -59,14 +59,12 @@ namespace ИндЗад2
             string sql2 = "SELECT `Company` FROM vacansii WHERE `Doljnost` = '" + comboBoxCorp.SelectedItem + "'";
             MySqlCommand command2 = new MySqlCommand(sql2, connection);
             S3 = command2.ExecuteScalar().ToString();
-            // string sql3 = "SELECT `id_Company FROM companies WHERE `Company` =" + S2;
-            //MySqlCommand command3 = new MySqlCommand(sql3, connection);
-            //S4 = command3.ExecuteScalar().ToString();
-
-            sql = "INSERT INTO `rabotniki`(`Company`, `Vakansiya`, `User`) VALUES " +
-                "(" + S3 + "," + S2 + "," + S1 +");";
             
-            command.ExecuteNonQuery();
+
+            string sql3 = "INSERT INTO `rabotniki`(`Company`, `Vakansiya`, `User`) VALUES " +
+                "(" + S3 + "," + S2 + "," + S1 +");";
+            MySqlCommand command3 = new MySqlCommand(sql3, connection);
+            command3.ExecuteNonQuery();
             connection.Close();
             richTextBox1.AppendText("Заявка принята. \n Можете закрыть окно");
         }
